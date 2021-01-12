@@ -25,7 +25,7 @@ const eqArrays = function (arr1, arr2){
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 
-// Array.isArray return true/false
+// Array
 const eqObjects = function(object1, object2) {
   let key1 = Object.keys(object1);
   let key2 = Object.keys(object2);

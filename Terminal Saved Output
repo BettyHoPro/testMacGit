@@ -1,0 +1,757 @@
+Last login: Sun Jan 10 11:22:05 on ttys003
+You have new mail.
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Bettys-MacBook-Pro:lighthouse cat$ vagrant ssh
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-87-generic x86_64)
+           .-='-. _db_      .--==-,
+          (_  (  _IIII_   _(    )  `.
+            (    |" " |-.(  ` ,_  `  )
+             '-._HHHHHH  `)---' `'--'
+                 |.   |--`
+                 |    |      Lighthouse Labs
+       _H___,=====;___|      Built # 20171219-141500-8dc7a2e
+    n_/____/____/``\__\
+   /__|:: :|. .|:::|::|      Direct complaints to /dev/null
+_%&|__&%_"_|_"_|_ H|__|__
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Sun Jan 10 17:31:22 2021 from 10.0.2.2
+vagrant [vagrant]> cd w1/lotide
+vagrant [lotide]> git add   if ( arr1.length !== arr2.length ){
+-bash: syntax error near unexpected token `('
+vagrant [lotide]>     return false;
+-bash: return: false: numeric argument required
+-bash: return: can only `return' from a function or sourced script
+vagrant [lotide]>   } else {
+-bash: syntax error near unexpected token `}'
+vagrant [lotide]>     for (let q=0 ; q< arr1.length; q++){
+-bash: syntax error near unexpected token `('
+vagrant [lotide]>       if ( arr1[q] !== arr2[q]) {
+-bash: syntax error near unexpected token `{'
+vagrant [lotide]>         return false ;
+-bash: return: false: numeric argument required
+-bash: return: can only `return' from a function or sourced script
+vagrant [lotide]>       }
+-bash: syntax error near unexpected token `}'
+vagrant [lotide]>     }
+-bash: syntax error near unexpected token `}'
+vagrant [lotide]>     return true;
+-bash: return: true: numeric argument required
+-bash: return: can only `return' from a function or sourced script
+vagrant [lotide]>   }
+-bash: syntax error near unexpected token `}'
+vagrant [lotide]> git add assertArraysEqual.js]
+fatal: pathspec 'assertArraysEqual.js]' did not match any files
+vagrant [lotide]> git add assertArraysEqual.js
+vagrant [lotide]> git commit -m "add assertArraysEqual.js"
+[master 7708513] add assertArraysEqual.js
+ 1 file changed, 24 insertions(+)
+ create mode 100644 w1/lotide/assertArraysEqual.js
+vagrant [lotide]> git push origin master
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 704 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To git@github.com:BettyHoPro/testMacGit.git
+   2bacdf8..7708513  master -> master
+vagrant [lotide]> touch without.js
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 1 === 1
+✅✅✅ Array Assertion Passed: 1,2,3 === 1,2,3
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 2,4  !== 2
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 2,4  !== 2
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: hello,world,lighthouse !== 2,4 
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: hello,world,lighthouse !== 1,2,4 
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 1,2,4  !== 2
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 1,2,4  !== 1,2
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 1,2,4  !== 1,2
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 2,4  !== 1,2
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 2,4  !== 2
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 2,4  !== 2
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 1,2,4 !== 2
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 1,2,4 === 1,2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:29
+      if (source[i] === itemsToRemove[j]) {
+                 ^
+
+ReferenceError: i is not defined
+    at without (/vagrant/w1/lotide/without.js:29:18)
+    at Object.<anonymous> (/vagrant/w1/lotide/without.js:49:1)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:29
+      if (source[i] === itemsToRemove[j]) {
+                 ^
+
+ReferenceError: i is not defined
+    at without (/vagrant/w1/lotide/without.js:29:18)
+    at Object.<anonymous> (/vagrant/w1/lotide/without.js:49:1)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:29
+      if (source[i] === itemsToRemove[j]) {
+                 ^
+
+ReferenceError: i is not defined
+    at without (/vagrant/w1/lotide/without.js:29:18)
+    at Object.<anonymous> (/vagrant/w1/lotide/without.js:49:1)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:29
+      if (source[i] === itemsToRemove[j]) {
+                 ^
+
+ReferenceError: i is not defined
+    at without (/vagrant/w1/lotide/without.js:29:18)
+    at Object.<anonymous> (/vagrant/w1/lotide/without.js:47:1)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:29
+      if (source[i] === itemsToRemove[j]) {
+                 ^
+
+ReferenceError: i is not defined
+    at without (/vagrant/w1/lotide/without.js:29:18)
+    at Object.<anonymous> (/vagrant/w1/lotide/without.js:47:1)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:34
+      answer.push(source[i])
+                         ^
+
+ReferenceError: i is not defined
+    at without (/vagrant/w1/lotide/without.js:34:26)
+    at Object.<anonymous> (/vagrant/w1/lotide/without.js:47:1)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:31
+        answer.push(souce[a]);
+                    ^
+
+ReferenceError: souce is not defined
+    at without (/vagrant/w1/lotide/without.js:31:21)
+    at Object.<anonymous> (/vagrant/w1/lotide/without.js:48:1)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 1,2,2,4,4 !== 2,4
+🛑🛑🛑 Array Assertion Failed: 1,1,2,2,3 !== 1,2
+vagrant [lotide]> node without.js
+\✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 1,2,2,4,4 !== 2,4
+🛑🛑🛑 Array Assertion Failed: 1,1,2,2,3 !== 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+🛑🛑🛑 Array Assertion Failed: 1,2,2,4,4 !== 2,4
+🛑🛑🛑 Array Assertion Failed: 1,1,2,2,3 !== 1,2
+vagrant [lotide]> 
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+🛑🛑🛑 Array Assertion Failed: 1,2,3 !== 2,3
+🛑🛑🛑 Array Assertion Failed: 1,2,4 !== 2,4
+🛑🛑🛑 Array Assertion Failed: 1,2,3 !== 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+/vagrant/w1/lotide/without.js:2
+  if ( arr1.length !== arr2.length ){
+            ^
+
+TypeError: Cannot read property 'length' of undefined
+    at eqArrays (/vagrant/w1/lotide/without.js:2:13)
+    at assertArraysEqual (/vagrant/w1/lotide/without.js:15:7)
+    at Object.<anonymous> (/vagrant/w1/lotide/without.js:54:1)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:30
+    add && ( answer.push(source[a]);
+                                   ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:607:28)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:30
+    add && ( answer.push(source[a]);
+                                   ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:607:28)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> git add without.js
+vagrant [lotide]> git commit -m "add without.js"
+[master 4921275] add without.js
+ 1 file changed, 51 insertions(+)
+ create mode 100644 w1/lotide/without.js
+vagrant [lotide]> git push origin master
+Warning: Permanently added the RSA host key for IP address '140.82.112.4' to the list of known hosts.
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.04 KiB | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To git@github.com:BettyHoPro/testMacGit.git
+   7708513..4921275  master -> master
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:6
+      ( arr1[q] !== arr2[q]) && ( return false );
+                                  ^^^^^^
+
+SyntaxError: Unexpected token return
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:607:28)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:6
+      ( arr1[q] !== arr2[q]) &&  return false ;
+                                 ^^^^^^
+
+SyntaxError: Unexpected token return
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:607:28)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+/vagrant/w1/lotide/without.js:6
+      ( arr1[q] !== arr2[q]) && return false ;
+                                ^^^^^^
+
+SyntaxError: Unexpected token return
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:607:28)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node without.js
+✅✅✅ Array Assertion Passed: hello,world,lighthouse === hello,world,lighthouse
+✅✅✅ Array Assertion Passed: 2,3 === 2,3
+✅✅✅ Array Assertion Passed: 2,4 === 2,4
+✅✅✅ Array Assertion Passed: 1,2 === 1,2
+vagrant [lotide]> node test.js
+[]
+[]
+this is 2
+[ 2 ]
+this is 3
+[ 3 ]
+this is 3
+[ 3, 4 ]
+this is 4
+[ 4, 5 ]
+vagrant [lotide]> node middle.js
+/vagrant/w1/lotide/middle.js:24
+( array.length <=2 ) && ( return []);
+                          ^^^^^^
+
+SyntaxError: Unexpected token return
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:607:28)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node middle.js
+/vagrant/w1/lotide/middle.js:40
+});
+ ^
+
+SyntaxError: Unexpected token )
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:607:28)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node middle.js
+vagrant [lotide]> 
+vagrant [lotide]> 
+vagrant [lotide]> node middle.js
+vagrant [lotide]> node middle.js
+vagrant [lotide]> node middle.js
+[ 1 ]
+[ 1, 2 ]
+vagrant [lotide]> node middle.js
+[ 1 ]
+[ 1, 2 ]
+vagrant [lotide]> node middle.js
+vagrant [lotide]> node middle.js
+vagrant [lotide]> node middle.js
+vagrant [lotide]> 
+vagrant [lotide]> node middle.js
+vagrant [lotide]> 
+vagrant [lotide]> node middle.js
+/vagrant/w1/lotide/middle.js:25
+  if ( array.length < = 2 ) {  
+                      ^
+
+SyntaxError: Unexpected token =
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:607:28)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node middle.js
+[ 1 ]
+[ 1, 2 ]
+vagrant [lotide]> node middle.js
+[ 1 ]
+[ 1, 2 ]
+vagrant [lotide]> node middle.js
+[ 1 ]
+[]
+[ 1, 2 ]
+[]
+vagrant [lotide]> node middle.js
+vagrant [lotide]> node middle.js
+vagrant [lotide]> node middle.js
+vagrant [lotide]> node middle.js
+[]
+[]
+[ undefined, undefined ]
+[ undefined, undefined ]
+[ 3 ]
+[ 4 ]
+vagrant [lotide]> node middle.js
+[]
+[]
+[ 2 ]
+[ 3 ]
+[ 2, 3 ]
+[ 3, 4 ]
+vagrant [lotide]> git add middle.js without.js
+vagrant [lotide]> git commit -m "update middle.js first done; update without.js"
+[master 8f8dd33] update middle.js first done; update without.js
+ 2 files changed, 50 insertions(+), 1 deletion(-)
+vagrant [lotide]> git push origin master
+Counting objects: 6, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.03 KiB | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To git@github.com:BettyHoPro/testMacGit.git
+   4921275..8f8dd33  master -> master
+vagrant [lotide]> touch countOnly.js 
+vagrant [lotide]> node countOnly.js
+/vagrant/w1/lotide/countOnly.js:42
+console.log(result1[1][2]);
+                   ^
+
+TypeError: Cannot read property '1' of undefined
+    at Object.<anonymous> (/vagrant/w1/lotide/countOnly.js:42:20)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node countOnly.js
+/vagrant/w1/lotide/countOnly.js:40
+const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+                ^
+
+ReferenceError: countOnly is not defined
+    at Object.<anonymous> (/vagrant/w1/lotide/countOnly.js:40:17)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node countOnly.js
+/vagrant/w1/lotide/countOnly.js:40
+const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+                ^
+
+ReferenceError: countOnly is not defined
+    at Object.<anonymous> (/vagrant/w1/lotide/countOnly.js:40:17)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node countOnly.js
+/vagrant/w1/lotide/countOnly.js:42
+console.log(itemsToCount);
+            ^
+
+ReferenceError: itemsToCount is not defined
+    at Object.<anonymous> (/vagrant/w1/lotide/countOnly.js:42:13)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node countOnly.js
+{ Jason: true, Karima: true, Fang: true, Agouhanna: false }
+/vagrant/w1/lotide/countOnly.js:42
+console.log(itemsToCount);
+            ^
+
+ReferenceError: itemsToCount is not defined
+    at Object.<anonymous> (/vagrant/w1/lotide/countOnly.js:42:13)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node countOnly.js
+/vagrant/w1/lotide/countOnly.js:40
+console.log(firtNames[1]);
+            ^
+
+ReferenceError: firtNames is not defined
+    at Object.<anonymous> (/vagrant/w1/lotide/countOnly.js:40:13)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node countOnly.js
+/vagrant/w1/lotide/countOnly.js:40
+console.log(firtNames[1]);
+            ^
+
+ReferenceError: firtNames is not defined
+    at Object.<anonymous> (/vagrant/w1/lotide/countOnly.js:40:13)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node countOnly.js
+/vagrant/w1/lotide/countOnly.js:40
+console.log(firtNames[1]);
+            ^
+
+ReferenceError: firtNames is not defined
+    at Object.<anonymous> (/vagrant/w1/lotide/countOnly.js:40:13)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node countOnly.js
+/vagrant/w1/lotide/countOnly.js:40
+console.log(firtNames);
+            ^
+
+ReferenceError: firtNames is not defined
+    at Object.<anonymous> (/vagrant/w1/lotide/countOnly.js:40:13)
+    at Module._compile (module.js:643:30)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node countOnly.js
+[ 'Karl',
+  'Salima',
+  'Agouhanna',
+  'Fang',
+  'Kavith',
+  'Jason',
+  'Salima',
+  'Fang',
+  'Joe' ]
+vagrant [lotide]> node countOnly.js
+Salima
+vagrant [lotide]> node countOnly.js
+Salima
+{ Jason: true, Karima: true, Fang: true, Agouhanna: false }
+vagrant [lotide]> node countOnly.js
+Salima
+undefined
+vagrant [lotide]> node countOnly.js
+Salima
+undefined
+vagrant [lotide]> node countOnly.js
+/vagrant/w1/lotide/countOnly.js:17
+  console.log( itemsToCount.[1] );
+                            ^
+
+SyntaxError: Unexpected token [
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:607:28)
+    at Object.Module._extensions..js (module.js:654:10)
+    at Module.load (module.js:556:32)
+    at tryModuleLoad (module.js:499:12)
+    at Function.Module._load (module.js:491:3)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+vagrant [lotide]> node countOnly.js
+Salima
+vagrant [lotide]> 

@@ -4,7 +4,6 @@ var pigLatinWords = [];
 for (var i = 0; i < originalWords.length; i++) {
   //console.log(translateToPigLatin(originalWords[i]), i);
   pigLatinWords.push(translateToPigLatin(originalWords[i]));
-  //pigLatinWords.
   //console.log(pigLatinWords);
  
 }
